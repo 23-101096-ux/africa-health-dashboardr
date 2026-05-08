@@ -1,0 +1,180 @@
+.access-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #f5a623 0%, #e8511a 60%, #c0392b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.access-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+}
+
+
+.access-logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.access-logo-area img {
+  width: 160px;
+}
+
+.access-logo-text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 23px;
+  margin-top: 6px;
+  letter-spacing: 0.5px;
+}
+
+
+.access-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 16px;
+  padding: 32px 28px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.access-lock-circle {
+    margin-bottom: 15px;
+}
+
+.access-lock-icon img {
+  width: 48px; 
+}
+
+
+.access-badge {
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: #ef4444;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.access-badge img {
+  width: 14px;
+}
+
+
+.access-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.access-desc {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+
+.access-action-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.access-sign-in-btn, 
+.access-home-btn {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.access-sign-in-btn {
+  border: none;
+  background: linear-gradient(90deg, #e8511a, #c0392b);
+  color: #fff;
+}
+
+.access-home-btn {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+  color: #ffa726;
+}
+
+.access-sign-in-btn img,
+.access-home-btn img {
+  width: 16px;
+}
+
+.access-sign-in-btn:hover,
+.access-home-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+
+.access-help-box {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.access-help-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.access-help-title img {
+  width: 16px;
+}
+
+.access-help-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  margin: 0;
+}
+
+.access-help-email {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  margin: 4px 0 0;
+  font-weight: 600;
+}
+
+
+.access-footer {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  margin: 0;
+}

@@ -1,0 +1,68 @@
+.roleselect-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(160deg, #f5a623 0%, #e8511a 60%, #c0392b 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .roleselect-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .roleselect-logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .roleselect-logo-area img{
+    width: 160px;
+  }
+  
+  .roleselect-logo-text {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  
+
+  
+  .roleselect-heading {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+  }
+  
+  .roleselect-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 220px;
+  }
+  
+  .roleselect-btn {
+    padding: 12px 24px;
+    border-radius: 24px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: all 0.2s;
+  }
+  
+  .roleselect-btn:hover {
+    background: rgba(255, 255, 255, 0.28);
+    border-color: rgba(255, 255, 255, 0.9);
+  }
