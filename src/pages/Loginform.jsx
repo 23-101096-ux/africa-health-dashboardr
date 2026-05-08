@@ -31,7 +31,7 @@ export default function LoginForm() {
         password === ADMIN_CREDENTIALS.password
       ) {
 
-        navigate("/dashboard");
+        navigate("/Admindashboard");
       } else {
 
         navigate("/access-denied");
