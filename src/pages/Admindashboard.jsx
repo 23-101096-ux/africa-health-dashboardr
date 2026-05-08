@@ -2,6 +2,7 @@ import React from 'react';
 import "./Admindashboard.css";
 import Sidebar from '../components/Sidebar';
 import StatsCards from '../components/Statscards';
+import TotalRegistrations from '../components/Totalregistrations';
 
 const Admindashboard = () => {
     return ( <>
@@ -13,7 +14,8 @@ const Admindashboard = () => {
               <h1>Dashboard Overview</h1>
             </div>
             <StatsCards />
-            
+            <TotalRegistrations />
+
             </div>
           </div>
         </div>
