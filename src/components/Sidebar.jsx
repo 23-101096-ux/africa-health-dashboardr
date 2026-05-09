@@ -51,8 +51,8 @@ const Sidebar = ({ currentPage }) => {
                     <Nav
                         navtext="Visitors"
                         iconImg={event}
-                        s={currentPage === "events" ? "active-link" : "normal-link"}
-                        path="/events"
+                        s={currentPage === "visitors" ? "active-link" : "normal-link"}
+                        path="/visitors" 
                     />
                     <Nav
                         navtext="Exhibitors"
