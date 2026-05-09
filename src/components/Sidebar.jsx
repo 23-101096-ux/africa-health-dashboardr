@@ -57,8 +57,8 @@ const Sidebar = ({ currentPage }) => {
                     <Nav
                         navtext="Exhibitors"
                         iconImg={booking}
-                        s={currentPage === "bookings" ? "active-link" : "normal-link"}
-                        path="/bookingMangment"
+                        s={currentPage === "Exhibitors" ? "active-link" : "normal-link"}
+                        path="/exhibitors"
                     />
                     <Nav
                         navtext="Floor Plan"

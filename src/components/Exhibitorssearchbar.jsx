@@ -3,29 +3,29 @@ import { useNavigate } from 'react-router-dom';
 import './Visitorssearchbar.css';
 
 import search from "../assets/search.svg";
-import addP from "../assets/addperson.svg";
+import bbuild from "../assets/build.svg";
 
-const VisitorsSearchBar = ({ searchTerm, onSearchChange }) => {
+const ExhibitorsSearchBar = ({ searchTerm, onSearchChange }) => {
     const navigate = useNavigate();
 
     return (
         <div className="wrapper">
-            <div className="earch-box">
+            <div className="search-box">
                 <span className="search-icon"><img src={search} alt="" /></span>
                 <input
                     type="text"
                     className="input"
-                    placeholder="Search visitors by name, specialty, or email..."
+                    placeholder="Search exhibitors by name, category, or email..."
                     value={searchTerm}
                     onChange={(e) => onSearchChange(e.target.value)}
                 />
             </div>
-            <button className="add-btn" onClick={() => navigate('/createVisitor')}>
-                <span className="add-icon"><img src={addP} alt="" /></span>
-                Add Visitor
+            <button className="add-btn" onClick={() => navigate('/createExhibitor')}>
+                <span><img src={bbuild} alt="" /></span>
+                Add Exhibitor
             </button>
         </div>
     );
 };
 
-export default VisitorsSearchBar;
+export default ExhibitorsSearchBar;
