@@ -6,6 +6,10 @@ import Admindashboard from "./pages/Admindashboard";
 import VisitorMangment from "./pages/visitors";
 import Exhibitors from "./pages/exhibitors"; 
 import CreateExhibitor from "./pages/createexhibitor"; 
+import Sessions from "./pages/sessions";
+import CreateSession from "./pages/createSession";
+import EditVisitor from "./pages/editVisitors";
+import EditSession from "./pages/Editsession";
 
 const Routess = () => {
     return (
@@ -16,9 +20,14 @@ const Routess = () => {
                 <Route path="/login/:role"     element={<LoginForm />} />
                 <Route path="/access-denied"   element={<AccessDenied />} />
                 <Route path="/Admindashboard"  element={<Admindashboard />} />
-                <Route path="/Visitormanagement" element={<VisitorMangment />} />
+                <Route path="/visitors" element={<VisitorMangment />} />
+                <Route path="/editVisitor/:id" element={<EditVisitor />} />
                 <Route path="/exhibitors" element={<Exhibitors />} />
                 <Route path="/createexhibitor" element={<CreateExhibitor />} />
+                <Route path="/sessions" element={<Sessions />} />
+                <Route path="/createSession" element={<CreateSession />} />
+                <Route path="/Editsession/:id" element={<EditSession />} />
+                
                 
             </Routes>
         </BrowserRouter>
