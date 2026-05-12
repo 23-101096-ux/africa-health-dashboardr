@@ -20,6 +20,9 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column
 }
 
 .overview-header {
@@ -114,7 +117,7 @@
   margin: 0 0 8px 0;
 }
 
-/* Desktop default: left column + stats sidebar */
+
 .dashboard-grid {
   display: flex;
   gap: 20px;
@@ -149,7 +152,7 @@
 }
 
 /* ══════════════════════════════════════
-   ≤ 1400px — slightly tighter padding
+              RESPONSIVE
 ══════════════════════════════════════ */
 @media (max-width: 1400px) {
   .main-content {
@@ -172,11 +175,46 @@
     padding: 28px;
   }
 }
+@media (max-width: 1024px) {
+  .charts-row {
+    flex-direction: column;
+  }
+
+  .dashboard-grid {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1100px) {
+  .dashboard-grid {
+    flex-direction: column; 
+  }
+}
+
+@media (max-width: 950px) {
+  .charts-row, 
+  .bottom-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .dashboard-left {
+    width: 100%;
+  }
+}
 
 
 @media (max-width: 900px) {
   .main-content {
     padding: 20px;
+    min-height: auto;
+  }
+  .page-layout {
+    flex-direction: column;
+    min-height: auto;
   }
 
   .overview-header h1 {
@@ -195,7 +233,18 @@
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .page-layout {
+    flex-direction: column;
+  }
 
+  .overview-header h1 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+}
 
 @media (max-width: 600px) {
   .main-content {

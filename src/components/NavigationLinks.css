@@ -1,0 +1,251 @@
+
+.nav-container {
+    background-color: #1a1a1a;
+    border: 1px solid #272727;
+    border-radius: 18px;
+    padding: 24px;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.nav-container h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.nav-container h2 img {
+    width: 28px;
+    height: 28px;
+    background-color: rgba(230, 126, 34, 0.15);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #272727;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+
+.link-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    background-color: #212121;
+    border-bottom: 1px solid #272727;
+    transition: background-color 0.2s;
+}
+
+.link-item:last-child {
+    border-bottom: none;
+}
+
+.link-item:hover {
+    background-color: #272727;
+}
+
+
+.link-item > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+}
+
+
+.link-item > div::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    border-radius: 3px;
+    background-color: #333333;
+    display: inline-block;
+}
+
+.link-item strong {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.link-item p {
+    font-size: 12px;
+    color: #555555;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.link-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s;
+    opacity: 0.5;
+}
+
+.link-item button:hover {
+    background-color: rgba(231, 76, 60, 0.15);
+    opacity: 1;
+}
+
+.link-item button img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+
+.add-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.add-box h3 {
+    display: none;
+}
+
+
+.add-box input {
+    background-color: #212121;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.add-box input::placeholder {
+    color: #444444;
+}
+
+.add-box input:focus {
+    border-color: #e67e22;
+}
+
+
+.add-box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #212121;
+    color: #ffffff;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 13px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.add-box button:hover {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+
+.add-box button img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+
+@media (max-width: 1400px) {
+    .nav-container {
+        padding: 22px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .nav-container h2 {
+        font-size: 18px;
+    }
+    .link-item strong {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .nav-container {
+        padding: 18px;
+        border-radius: 14px;
+    }
+    .link-item {
+        padding: 12px 14px;
+    }
+    .add-box input,
+    .add-box button {
+        font-size: 13px;
+        padding: 11px 14px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .nav-container {
+        padding: 14px;
+        border-radius: 12px;
+    }
+    .nav-container h2 {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .link-item p {
+        display: none;
+    }
+    .link-item {
+        padding: 12px 12px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .nav-container {
+        padding: 10px;
+    }
+    .nav-container h2 {
+        font-size: 15px;
+    }
+    .link-item strong {
+        font-size: 13px;
+    }
+    .add-box button {
+        font-size: 13px;
+    }
+}

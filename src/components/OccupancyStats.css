@@ -1,0 +1,47 @@
+.stats-box {
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+}
+
+.underline-none {
+    border-bottom: none;
+}
+
+.value {
+    font-weight: bold;
+}
+
+.green { color: #00c896; }
+.orange { color: #ffa500; }
+
+
+
+@media (max-width: 1200px) {
+    .stats-box { padding: 15px; }
+}
+
+@media (max-width: 900px) {
+    .row { font-size: 13px; padding: 10px 0; }
+    .title { font-size: 1rem; }
+}
+
+@media (max-width: 600px) {
+    .stats-box { border-radius: 8px; }
+}

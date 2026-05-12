@@ -10,6 +10,8 @@ import Sessions from "./pages/sessions";
 import CreateSession from "./pages/createSession";
 import EditVisitor from "./pages/editVisitors";
 import EditSession from "./pages/Editsession";
+import FloorPlan from "./pages/Floorplan";
+import Settings from "./pages/settings";
 
 const Routess = () => {
     return (
@@ -27,6 +29,8 @@ const Routess = () => {
                 <Route path="/sessions" element={<Sessions />} />
                 <Route path="/createSession" element={<CreateSession />} />
                 <Route path="/Editsession/:id" element={<EditSession />} />
+                <Route path="/Floorplan" element={<FloorPlan />} />
+                <Route path="/settings" element={<Settings />} />
                 
                 
             </Routes>
