@@ -1,8 +1,9 @@
 .layout-container {
-    background-color: #121212;
     color: white;
     padding: 40px;
     font-family: sans-serif;
+    border: #D4841A solid 1px;
+    border-radius: 3%;
     min-height: 100vh;
 }
 
@@ -25,11 +26,9 @@
 .btn-save { background-color: #4dc3ff; color: #000; }
 .btn-add { background-color: #222; color: #fff; border: 1px solid #444 !important; }
 
-/* THE GRID SYSTEM */
 .booth-grid {
     display: grid;
     gap: 20px;
-    /* Default: 1 column for small phones */
     grid-template-columns: repeat(1, 1fr);
 }
 
@@ -38,17 +37,17 @@
     .booth-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* Screens wider than 900px: 3 columns */
+
 @media (min-width: 900px) {
     .booth-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* Screens wider than 1200px: 4 columns */
+
 @media (min-width: 1200px) {
     .booth-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
-/* Screens wider than 1400px: wider gaps and padding */
+
 @media (min-width: 1400px) {
     .booth-grid { gap: 30px; }
     .layout-container { padding: 60px; }
@@ -89,15 +88,30 @@
 .card-content h3 { margin: 0; font-size: 1rem; }
 .card-content p { color: #888; font-size: 0.9rem; margin-top: 5px; }
 
-/* LEGEND */
+
 .legend {
     margin-top: 40px;
     display: flex;
     gap: 20px;
 }
 
-.legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
-.dot { width: 12px; height: 12px; border-radius: 3px; }
-.green { background-color: #2ecc71; }
-.gray { background-color: #444; }
-.orange { background-color: #e67e22; }
+.legend-item {
+     display: flex; 
+     align-items: center;
+      gap: 8px;
+       font-size: 0.9rem;
+     }
+.dot { 
+    width: 12px;
+     height: 12px; 
+     border-radius: 3px; 
+    }
+.green { 
+    background-color: #2ecc71;
+ }
+.gray {
+     background-color: #444;
+     }
+.orange { 
+    background-color: #e67e22; 
+}

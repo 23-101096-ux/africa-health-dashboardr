@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar';
 import NavigationLinks from '../components/Navigationlinks';
 import PopupBannerEditor from '../components/Popupbannereditor';
 import MessagesInbox from '../components/Messagesinbox';
+// import ContentScheduling from '../components/Contentscheduling';
 
 const Settings = () => {
     return (
@@ -15,7 +16,7 @@ const Settings = () => {
 
                     <div className="overview-header">
                         <h1>Content & System Settings</h1>
-                        <p>Manage navigation, popup ads, and customer messages</p>
+
                     </div>
 
    
@@ -23,6 +24,7 @@ const Settings = () => {
                         <NavigationLinks />
                         <PopupBannerEditor />
                         <MessagesInbox />
+                        {/* <ContentScheduling /> */}
                     </div>
 
                 </div>
