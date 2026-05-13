@@ -15,9 +15,10 @@
     max-width: 800px;
 }
 
-/* ── Header ── */
+
 .cs-header {
     display: flex;
+    color: #ffffff;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 32px;
@@ -53,7 +54,7 @@
     color: #fff;
 }
 
-/* ── Error ── */
+
 .cs-error {
     background-color: rgba(239, 68, 68, 0.1);
     border: 1px solid rgba(239, 68, 68, 0.3);
@@ -64,7 +65,7 @@
     margin-bottom: 20px;
 }
 
-/* ── Form ── */
+
 .cs-form {
     display: flex;
     flex-direction: column;
@@ -109,13 +110,13 @@
 .cs-input::placeholder { color: #555555; }
 .cs-input:focus        { border-color: #e8511a; }
 
-/* date/time inputs — fix calendar icon colour */
+
 .cs-input::-webkit-calendar-picker-indicator {
     filter: invert(0.6);
     cursor: pointer;
 }
 
-/* ── Actions ── */
+
 .cs-actions {
     display: flex;
     justify-content: flex-end;

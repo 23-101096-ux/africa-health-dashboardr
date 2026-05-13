@@ -11,7 +11,6 @@
     border: 1px solid #333;
 }
 
-
 .sl-top {
     display: flex;
     align-items: center;
@@ -34,6 +33,7 @@
     font-weight: 700;
     white-space: nowrap;
 }
+
 
 .tag-keynote  { background: rgba(245,166,35,0.15);  color: #f5a623; border: 1px solid rgba(245,166,35,0.4);  }
 .tag-seminar  { background: rgba(56,189,248,0.12);  color: #38bdf8; border: 1px solid rgba(56,189,248,0.4);  }
@@ -79,11 +79,22 @@
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .sl-actions button img {
     width: 14px;
     height: 14px;
+}
+
+.sl-btn-book {
+    background: linear-gradient(90deg, #e8511a, #f5a623);
+    color: #ffffff;
+    border: none;
+}
+
+.sl-btn-book:hover {
+    background-color: #a86624;
 }
 
 .sl-btn-edit {
@@ -102,6 +113,46 @@
     background: rgba(239,68,68,0.12);
     color: #ef4444;
     border: 1px solid rgba(239,68,68,0.35);
+}
+
+
+@media (max-width: 1400px) {
+    .sl-card { padding: 22px 24px; }
+    .sl-title { font-size: 17px; }
+}
+
+@media (max-width: 1200px) {
+    .sl-card { padding: 20px 22px; }
+    .sl-meta { gap: 22px; }
+    .sl-title { font-size: 16px; }
+}
+
+@media (max-width: 900px) {
+    .sl-card { padding: 18px 18px; }
+    .sl-title { font-size: 15px; }
+    .sl-meta { gap: 16px; }
+    .sl-meta-item { font-size: 12px; }
+    .sl-actions button { padding: 8px 14px; font-size: 12px; }
+}
+
+@media (max-width: 600px) {
+    .sl-card { padding: 16px 14px; }
+    .sl-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+    .sl-actions { flex-direction: column; }
+    .sl-actions button { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 400px) {
+    .sl-card { padding: 12px 10px; }
+    .sl-title { font-size: 14px; }
+    .sl-tag { font-size: 11px; padding: 2px 10px; }
+    .sl-meta-item { font-size: 11px; }
+    .sl-actions button { font-size: 12px; padding: 8px 12px; }
 }
 
 
